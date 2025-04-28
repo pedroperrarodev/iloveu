@@ -1,0 +1,80 @@
+/* Estilo do botão de chocolate */
+.chocolate-button {
+    background: transparent;
+    color: #6b3f0f; /* Cor do emoji do chocolate */
+    font-size: 5em; /* Tamanho maior do emoji */
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+    padding: 0;
+    margin: 0;
+}
+
+.chocolate-button:hover {
+    transform: scale(1.2); /* Efeito de aumento quando passa o mouse */
+    color: #3e2116; /* Cor mais escura para o efeito hover */
+}
+
+.chocolate-button:active {
+    transform: scale(0.9); /* Efeito de clique */
+}
+
+/* Estilo do balão de fala */
+.balloon {
+    display: none;
+    position: absolute;
+    bottom: 100px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    width: 250px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    z-index: 10;
+    animation: fadeIn 0.5s ease-in-out;
+    font-size: 1.4em;
+    color: #333;
+}
+
+.balloon p {
+    margin: 10px 0;
+}
+
+.balloon button {
+    padding: 8px 15px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 0.7em;
+    transition: background-color 0.3s ease;
+}
+
+.balloon button:hover {
+    background-color: #694e4e;
+}
+
+/* Triângulo para o balão */
+.balloon::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 15px solid #fff;
+}
+
+/* Animação de fade-in do balão */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
