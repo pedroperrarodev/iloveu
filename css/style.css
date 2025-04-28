@@ -93,3 +93,39 @@ background: white;
 .button{
     padding-top: 2%;
 }
+
+
+/* -------------------------------------- */
+/*           RESPONSIVIDADE               */
+/* -------------------------------------- */
+
+/* Telas médias (tablets) */
+@media (min-width: 600px) and (max-width: 1024px) {
+    iframe {
+        width: 40%;
+    }
+
+    .carousel {
+        max-width: 40%;
+    }
+
+    .carousel-slide {
+        height: 45vh;
+    }
+}
+
+/* Telas pequenas (celulares) */
+@media (max-width: 599px) {
+    iframe {
+        width: 80%;
+    }
+
+    .carousel {
+        max-width: 80%;
+    }
+
+    .carousel-slide {
+        height: 65vh;
+    }
+}
+
