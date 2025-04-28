@@ -18,12 +18,12 @@ background: rgba(107, 64, 143, 0.831);
 
 /* Ajuste do iframe */
 iframe {
-width: 80%;
+width: 17%;
 margin-bottom: 20px;
 }
 
 .content{
-    display: flex;
+display: flex;
 flex-direction: column;  
 justify-content: center;
 align-items: center;
@@ -39,8 +39,8 @@ text-align: center;
 /* Carousel */
 .carousel {
 position: relative;
-width: 79%;
-max-width: 400px;
+width: 100%;
+max-width: 17%;
 overflow: hidden;
 border-radius: 10px;
 box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
